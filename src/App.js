@@ -30,10 +30,10 @@ function App() {
   // Add gif
   const addGif = async (term) => {
 
-    const res = await fetch(`https://api.giphy.com/v1/search?api_key=${apiKey}&q=${term}&limit=1`)
+    const res = await fetch(`https://api.giphy.com/v1/search?api_key=${apiKey}&q=${term.text}`)
     const data = await res.json()
-
-    setGifs([...gifs, data.data])
+console.log(data)
+    // setGifs([...gifs, data.data])
   }
 
   // Delete gif

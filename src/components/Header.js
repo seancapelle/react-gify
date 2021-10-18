@@ -1,11 +1,11 @@
-import Button from './Button'
+import Input from './Input'
 
-const Header = ({ addGif }) => {
+const Header = ({ onAdd }) => {
 
     return (
         <div>
             <h1>React Gif</h1>
-            <Button addGif={addGif}/>
+            <Input onAdd={onAdd}/>
         </div>
     )
 }
